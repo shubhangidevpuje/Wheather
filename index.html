@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WHEATHER APP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="main-div kenburns-top">
+        <div class="container">
+            <h2 align="center" class="heading">WEATHER FORECAST</h1>
+            <form>
+                <div class="component">
+                <div>
+                <input type="text" name="city" id="city_name" placeholder="Enter a city" autofocus>
+                </div>
+                <div class="btn">
+                    <button type="button" class="srch_btn" onclick="fetchCity()">
+                    <img src="https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-15.png" alt="search icon" height="30px" />
+                </button>
+                </div>
+              </div>
+              <br><br>
+              <div align="center" style="margin-top: -30px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" alt="weathericon" height="150px">
+              </div>
+              <div class="center" align="center">
+                  <span id="city">CITY NAME</span><br>
+                  <span class="measurement" id="temp">0°C</span>
+              </div>
+              <div align="center" style="margin-top:30px">
+                  <table width="100%" cellpadding="10px" class="tbl">
+                      <tr align="center">
+                          <td>
+                              <h5 class="headings">WIND SPEED</h5>
+                              <span class="measurement" id="windspeed">0 km/hr</span>
+                          </td>
+                          <td>
+                              <h6 class="headings">HUMIDITY</h6>
+                              <span class="measurement" id="humidity">0 g/kg</span>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
